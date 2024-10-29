@@ -1,0 +1,33 @@
+[
+    {
+        "Name": "NVIDIA GeForce RTX 3070",
+        "Compute Capability": "8.6",
+        "Total Memory (MB)": 7877,
+        "Multiprocessors (SMs)": 46,
+        "Max Threads Per SM": 1536,
+        "Total Cores": 5888,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 16,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 100,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 100,
+        "L2 Cache Size (KB)": 4096,
+        "Memory Bus Width (bits)": 256,
+        "Memory Bandwidth (GB/s)": 448,
+        "Clock Rate (MHz)": 1755,
+        "Warps Per SM": 48,
+        "Blocks Per SM": 16,
+        "Half Precision FLOP/s": 9623,
+        "Single Precision FLOP/s": 4811,
+        "Double Precision FLOP/s": 4811,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 448,
+        "Global Memory Size (MB)": 7877,
+        "L2 Cache Size": 4096,
+        "Memcpy Engines": 2
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "Name": "NVIDIA GeForce GTX 1060 6GB",
+        "Compute Capability": "6.1",
+        "Total Memory (MB)": 6065,
+        "Multiprocessors (SMs)": 10,
+        "Max Threads Per SM": 2048,
+        "Total Cores": 1280,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 32,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 96,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 96,
+        "L2 Cache Size (KB)": 1536,
+        "Memory Bus Width (bits)": 192,
+        "Memory Bandwidth (GB/s)": 192,
+        "Clock Rate (MHz)": 1771,
+        "Warps Per SM": 64,
+        "Blocks Per SM": 32,
+        "Half Precision FLOP/s": 2111,
+        "Single Precision FLOP/s": 1055,
+        "Double Precision FLOP/s": 1055,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 192,
+        "Global Memory Size (MB)": 6065,
+        "L2 Cache Size": 1536,
+        "Memcpy Engines": 2
+    }
+]
