@@ -1,0 +1,33 @@
+[
+    {
+        "Name": "NVIDIA GeForce RTX 3060",
+        "Compute Capability": "8.6",
+        "Total Memory (MB)": 11939,
+        "Multiprocessors (SMs)": 28,
+        "Max Threads Per SM": 1536,
+        "Total Cores": 3584,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 16,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 100,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 100,
+        "L2 Cache Size (KB)": 2304,
+        "Memory Bus Width (bits)": 192,
+        "Memory Bandwidth (GB/s)": 360,
+        "Clock Rate (MHz)": 1777,
+        "Warps Per SM": 48,
+        "Blocks Per SM": 16,
+        "Half Precision FLOP/s": 5931,
+        "Single Precision FLOP/s": 2965,
+        "Double Precision FLOP/s": 2965,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 360,
+        "Global Memory Size (MB)": 11939,
+        "L2 Cache Size": 2304,
+        "Memcpy Engines": 2
+    }
+]
