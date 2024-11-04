@@ -1,0 +1,33 @@
+[
+    {
+        "Name": "NVIDIA GeForce RTX 2070 SUPER",
+        "Compute Capability": "7.5",
+        "Total Memory (MB)": 7790,
+        "Multiprocessors (SMs)": 40,
+        "Max Threads Per SM": 1024,
+        "Total Cores": 5120,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 16,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 64,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 64,
+        "L2 Cache Size (KB)": 4096,
+        "Memory Bus Width (bits)": 256,
+        "Memory Bandwidth (GB/s)": 448,
+        "Clock Rate (MHz)": 1785,
+        "Warps Per SM": 32,
+        "Blocks Per SM": 16,
+        "Half Precision FLOP/s": 8511,
+        "Single Precision FLOP/s": 4255,
+        "Double Precision FLOP/s": 4255,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 448,
+        "Global Memory Size (MB)": 7790,
+        "L2 Cache Size": 4096,
+        "Memcpy Engines": 3
+    }
+]
