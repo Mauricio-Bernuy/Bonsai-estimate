@@ -1,28 +1,28 @@
 PROC-00000 Start execution
-PROC-00000 0	0	Sorting	1.09603
-PROC-00000 1	1	Data-reordering	0.584544
-PROC-00000 2	9	Predict	0.464896
-PROC-00000 3	0	Sorting	1.17338
-PROC-00000 4	1	Data-reordering	0.122816
-PROC-00000 5	2	Tree-construction	3.28835
-PROC-00000 6	11	Memory	0.129024
-PROC-00000 7	3	Compute-properties	0.370528
-PROC-00000 8	10	setActiveGrpsFunc	0.004064
+PROC-00000 0	0	Sorting	1.4407
+PROC-00000 1	1	Data-reordering	0.449536
+PROC-00000 2	9	Predict	0.224448
+PROC-00000 3	0	Sorting	0.38912
+PROC-00000 4	1	Data-reordering	0.090112
+PROC-00000 5	2	Tree-construction	2.12275
+PROC-00000 6	11	Memory	0.072704
+PROC-00000 7	3	Compute-properties	0.272384
+PROC-00000 8	10	setActiveGrpsFunc	0.003072
 PROC-00000 INT Interaction at (rank= 0 ) iter: 0	direct: 8669	appr: 458	avg dir: 86.690002	avg appr: 4.580000
-PROC-00000 APPTIME [0]: Iter: 0	0.00011611 	n: 100 EventTime: 0.101664  and 0.000000	Sum: 0.101664
-PROC-00000 9	8	Correct	0.155072
-PROC-00000 10	7	Energy	0.075776
-PROC-00000 TIME [00] TOTAL: 0.00628805	 Grav: 0.00011611 (GPUgrav 0.000101664 , LET Com: 0)	Build: 0.00523186	Domain: 0	 Wait: 0	domUp: 0	domEx: 0	domWait: 0	tPredCor: 0.000914097
-PROC-00000 11	9	Predict	7552.11
-PROC-00000 12	0	Sorting	0.544768
-PROC-00000 13	1	Data-reordering	0.104416
-PROC-00000 14	2	Tree-construction	2.32653
-PROC-00000 15	11	Memory	0.069152
-PROC-00000 16	3	Compute-properties	0.200544
-PROC-00000 17	10	setActiveGrpsFunc	0.003456
+PROC-00000 APPTIME [0]: Iter: 0	9.70364e-05 	n: 100 EventTime: 0.082944  and 0.000000	Sum: 0.082944
+PROC-00000 9	8	Correct	0.128832
+PROC-00000 10	7	Energy	0.054272
+PROC-00000 TIME [00] TOTAL: 0.00371504	 Grav: 9.70364e-05 (GPUgrav 8.2944e-05 , LET Com: 0)	Build: 0.00306988	Domain: 0	 Wait: 0	domUp: 0	domEx: 0	domWait: 0	tPredCor: 0.000530243
+PROC-00000 11	9	Predict	3130.65
+PROC-00000 12	0	Sorting	0.745472
+PROC-00000 13	1	Data-reordering	0.148224
+PROC-00000 14	2	Tree-construction	3.01363
+PROC-00000 15	11	Memory	0.069792
+PROC-00000 16	3	Compute-properties	0.19456
+PROC-00000 17	10	setActiveGrpsFunc	0.00304
 PROC-00000 INT Interaction at (rank= 0 ) iter: 1	direct: 8669	appr: 458	avg dir: 86.690002	avg appr: 4.580000
-PROC-00000 APPTIME [0]: Iter: 1	4.41074e-05 	n: 100 EventTime: 0.029568  and 0.000000	Sum: 0.029568
-PROC-00000 18	8	Correct	0.080096
-PROC-00000 19	7	Energy	0.042816
-PROC-00000 TIME [00] TOTAL: 7.55571	 Grav: 4.41074e-05 (GPUgrav 2.9568e-05 , LET Com: 0)	Build: 0.00339603	Domain: 0	 Wait: 0	domUp: 0	domEx: 0	domWait: 0	tPredCor: 7.55225
-PROC-00000 Finished total took: 9.36746
+PROC-00000 APPTIME [0]: Iter: 1	4.1008e-05 	n: 100 EventTime: 0.026688  and 0.000000	Sum: 0.026688
+PROC-00000 18	8	Correct	0.076704
+PROC-00000 19	7	Energy	0.03872
+PROC-00000 TIME [00] TOTAL: 3.13521	 Grav: 4.1008e-05 (GPUgrav 2.6688e-05 , LET Com: 0)	Build: 0.00432086	Domain: 0	 Wait: 0	domUp: 0	domEx: 0	domWait: 0	tPredCor: 3.13083
+PROC-00000 Finished total took: 4.33426

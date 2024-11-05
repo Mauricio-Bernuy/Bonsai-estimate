@@ -1,0 +1,33 @@
+[
+    {
+        "Name": "NVIDIA GeForce RTX 4060 Ti",
+        "Compute Capability": "8.9",
+        "Total Memory (MB)": 7843,
+        "Multiprocessors (SMs)": 34,
+        "Max Threads Per SM": 1536,
+        "Total Cores": 4352,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 24,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 100,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 100,
+        "L2 Cache Size (KB)": 32768,
+        "Memory Bus Width (bits)": 128,
+        "Memory Bandwidth (GB/s)": 288,
+        "Clock Rate (MHz)": 2565,
+        "Warps Per SM": 48,
+        "Blocks Per SM": 24,
+        "Half Precision FLOP/s": 10396,
+        "Single Precision FLOP/s": 5198,
+        "Double Precision FLOP/s": 5198,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 288,
+        "Global Memory Size (MB)": 7843,
+        "L2 Cache Size": 32768,
+        "Memcpy Engines": 2
+    }
+]
