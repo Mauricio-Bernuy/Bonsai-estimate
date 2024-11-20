@@ -1,0 +1,30 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__C": 10000
+            },
+            "best_mae": 17065.371267984498,
+            "best_mape": 69597.63256128333
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N",
+            "theta",
+            "dt",
+            "I"
+        ],
+        "best_params": {
+            "regressor__model__C": 10000
+        },
+        "best_mae": 17065.371267984498,
+        "best_mape": 69597.63256128333
+    }
+}

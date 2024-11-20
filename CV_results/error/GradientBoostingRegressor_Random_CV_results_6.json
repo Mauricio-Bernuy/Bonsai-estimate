@@ -1,0 +1,26 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {},
+            "best_mae": 369.07650890944973,
+            "best_mape": 0.22158173334296233
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N",
+            "theta",
+            "dt",
+            "I"
+        ],
+        "best_params": {},
+        "best_mae": 369.07650890944973,
+        "best_mape": 0.22158173334296233
+    }
+}

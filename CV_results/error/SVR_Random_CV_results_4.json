@@ -1,0 +1,214 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.0001,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14196.07659296926,
+            "best_mape": 474372.52412202896
+        },
+        {
+            "features": [
+                "theta"
+            ],
+            "best_params": {
+                "regressor__model__C": 1,
+                "regressor__model__epsilon": 0.1,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14214.854444223325,
+            "best_mape": 457729.85018662317
+        },
+        {
+            "features": [
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__C": 100,
+                "regressor__model__epsilon": 0.0001,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 8538.639690816635,
+            "best_mape": 42.85361839177105
+        },
+        {
+            "features": [
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.1,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14127.426941914324,
+            "best_mape": 409104.8121524955
+        },
+        {
+            "features": [
+                "N",
+                "theta"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.0001,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14196.086735903795,
+            "best_mape": 474372.05584148626
+        },
+        {
+            "features": [
+                "N",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.0001,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14196.086735777493,
+            "best_mape": 474372.0557995299
+        },
+        {
+            "features": [
+                "N",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.0001,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14196.08377463937,
+            "best_mape": 474366.8781202111
+        },
+        {
+            "features": [
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__C": 100,
+                "regressor__model__epsilon": 0.01,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 8628.314702181771,
+            "best_mape": 34.57368315734666
+        },
+        {
+            "features": [
+                "theta",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.1,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14121.393023566696,
+            "best_mape": 396639.11969882104
+        },
+        {
+            "features": [
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.1,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14121.140701152268,
+            "best_mape": 397380.2759630252
+        },
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.0001,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14196.09272956966,
+            "best_mape": 474372.690360328
+        },
+        {
+            "features": [
+                "N",
+                "theta",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.0001,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14196.089996571836,
+            "best_mape": 474367.72726645076
+        },
+        {
+            "features": [
+                "N",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.0001,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14196.089996451434,
+            "best_mape": 474367.7272944981
+        },
+        {
+            "features": [
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.1,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14120.338868505447,
+            "best_mape": 392869.4423690337
+        },
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__C": 0.0001,
+                "regressor__model__epsilon": 1e-05,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 14196.09366360008,
+            "best_mape": 474368.3054864883
+        }
+    ],
+    "best_result": {
+        "features": [
+            "theta",
+            "dt"
+        ],
+        "best_params": {
+            "regressor__model__C": 100,
+            "regressor__model__epsilon": 0.01,
+            "regressor__model__kernel": "rbf"
+        },
+        "best_mae": 8628.314702181771,
+        "best_mape": 34.57368315734666
+    }
+}

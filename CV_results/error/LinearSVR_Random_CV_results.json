@@ -1,0 +1,149 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N"
+            ],
+            "best_params": {},
+            "best_mae": 28157.75161115543,
+            "best_mape": 1653936.1844354204
+        },
+        {
+            "features": [
+                "theta"
+            ],
+            "best_params": {},
+            "best_mae": 14204.820162484879,
+            "best_mape": 514164.89823640353
+        },
+        {
+            "features": [
+                "dt"
+            ],
+            "best_params": {},
+            "best_mae": 9152.848811502861,
+            "best_mape": 111647.4436458945
+        },
+        {
+            "features": [
+                "I"
+            ],
+            "best_params": {},
+            "best_mae": 38733.43888263106,
+            "best_mape": 11149859.288435845
+        },
+        {
+            "features": [
+                "N",
+                "theta"
+            ],
+            "best_params": {},
+            "best_mae": 20175.800397557694,
+            "best_mape": 984020.437025543
+        },
+        {
+            "features": [
+                "N",
+                "dt"
+            ],
+            "best_params": {},
+            "best_mae": 32704.26259788769,
+            "best_mape": 1537107.739758038
+        },
+        {
+            "features": [
+                "N",
+                "I"
+            ],
+            "best_params": {},
+            "best_mae": 55385.73024389666,
+            "best_mape": 8865935.154667275
+        },
+        {
+            "features": [
+                "theta",
+                "dt"
+            ],
+            "best_params": {},
+            "best_mae": 9604.330724965983,
+            "best_mape": 115199.94608145735
+        },
+        {
+            "features": [
+                "theta",
+                "I"
+            ],
+            "best_params": {},
+            "best_mae": 27263.377526354256,
+            "best_mape": 7175343.0060880305
+        },
+        {
+            "features": [
+                "dt",
+                "I"
+            ],
+            "best_params": {},
+            "best_mae": 27462.16869177283,
+            "best_mape": 11885034.43580399
+        },
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {},
+            "best_mae": 37257.26584015244,
+            "best_mape": 2099890.126057793
+        },
+        {
+            "features": [
+                "N",
+                "theta",
+                "I"
+            ],
+            "best_params": {},
+            "best_mae": 45257.4119778769,
+            "best_mape": 5972659.952417955
+        },
+        {
+            "features": [
+                "N",
+                "dt",
+                "I"
+            ],
+            "best_params": {},
+            "best_mae": 36707.55796511788,
+            "best_mape": 4223723.81947685
+        },
+        {
+            "features": [
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {},
+            "best_mae": 20911.856465918034,
+            "best_mape": 3664045.2976311455
+        },
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {},
+            "best_mae": 35263.66581801873,
+            "best_mape": 3122030.871112502
+        }
+    ],
+    "best_result": {
+        "features": [
+            "dt"
+        ],
+        "best_params": {},
+        "best_mae": 9152.848811502861,
+        "best_mape": 111647.4436458945
+    }
+}

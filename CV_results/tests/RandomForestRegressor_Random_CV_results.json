@@ -1,0 +1,48 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.9,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2,
+                "regressor__model__n_estimators": 100
+            },
+            "best_mae": 0.0070467155667266745,
+            "best_mape": 0.05692069870099707
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N",
+            "theta",
+            "dt",
+            "Clock Rate (MHz)",
+            "L2 Cache Size (KB)",
+            "Multiprocessors (SMs)",
+            "Half Precision FLOP/s",
+            "Single Precision FLOP/s",
+            "Double Precision FLOP/s"
+        ],
+        "best_params": {
+            "regressor__model__max_depth": 10,
+            "regressor__model__max_features": 0.9,
+            "regressor__model__min_samples_leaf": 1,
+            "regressor__model__min_samples_split": 2,
+            "regressor__model__n_estimators": 100
+        },
+        "best_mae": 0.0070467155667266745,
+        "best_mape": 0.05692069870099707
+    }
+}

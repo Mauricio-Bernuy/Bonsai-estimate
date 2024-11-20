@@ -1,0 +1,30 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N"
+            ],
+            "best_params": {
+                "regressor__model__C": 1,
+                "regressor__model__epsilon": 0.0001,
+                "regressor__model__gamma": "auto",
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 0.4383396671793952,
+            "best_mape": 0.4383396671793952
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N"
+        ],
+        "best_params": {
+            "regressor__model__C": 1,
+            "regressor__model__epsilon": 0.0001,
+            "regressor__model__gamma": "auto",
+            "regressor__model__kernel": "rbf"
+        },
+        "best_mae": 0.4383396671793952,
+        "best_mape": 0.4383396671793952
+    }
+}
