@@ -1,0 +1,232 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 2,
+                "regressor__model__max_features": 0.2,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 14168.165207302834,
+            "best_mape": 383388.21663302125
+        },
+        {
+            "features": [
+                "theta"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 5,
+                "regressor__model__max_features": 0.2,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 14213.09535665187,
+            "best_mape": 464041.7487859454
+        },
+        {
+            "features": [
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 5,
+                "regressor__model__max_features": 0.2,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 8559.037126924339,
+            "best_mape": 34.73494181054448
+        },
+        {
+            "features": [
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 2,
+                "regressor__model__max_features": 0.2,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 14157.39494882561,
+            "best_mape": 440850.675702685
+        },
+        {
+            "features": [
+                "N",
+                "theta"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 2,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 14171.8057076792,
+            "best_mape": 383742.71423733816
+        },
+        {
+            "features": [
+                "N",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 20,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 10
+            },
+            "best_mae": 7314.9896257118,
+            "best_mape": 2.487396741425141
+        },
+        {
+            "features": [
+                "N",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 5,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 14142.581217530937,
+            "best_mape": 372555.4526613054
+        },
+        {
+            "features": [
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 2,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 8680.262955981292,
+            "best_mape": 35.900194740526764
+        },
+        {
+            "features": [
+                "theta",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 2,
+                "regressor__model__max_features": 0.4,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 14171.042342862525,
+            "best_mape": 421974.1732744581
+        },
+        {
+            "features": [
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 5,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 6579.588808626159,
+            "best_mape": 11.46208676006663
+        },
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 5,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 7559.1523387383,
+            "best_mape": 2.267769257015618
+        },
+        {
+            "features": [
+                "N",
+                "theta",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 5,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 4,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 14194.361537521783,
+            "best_mape": 385757.6487687836
+        },
+        {
+            "features": [
+                "N",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 5,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 4,
+                "regressor__model__min_samples_split": 10
+            },
+            "best_mae": 3194.133279938119,
+            "best_mape": 2.4247771199036188
+        },
+        {
+            "features": [
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 5,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 4,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 6589.274099315805,
+            "best_mape": 11.026579532473352
+        },
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 20,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 519.6952880895103,
+            "best_mape": 0.36538551793220414
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N",
+            "theta",
+            "dt",
+            "I"
+        ],
+        "best_params": {
+            "regressor__model__max_depth": 20,
+            "regressor__model__max_features": 1.0,
+            "regressor__model__min_samples_leaf": 2,
+            "regressor__model__min_samples_split": 2
+        },
+        "best_mae": 519.6952880895103,
+        "best_mape": 0.36538551793220414
+    }
+}

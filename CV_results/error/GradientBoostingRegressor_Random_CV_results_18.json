@@ -1,0 +1,36 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 4,
+                "regressor__model__min_samples_split": 10
+            },
+            "best_mae": 460.0213644747969,
+            "best_mape": 0.17854535115010384
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N",
+            "theta",
+            "dt",
+            "I"
+        ],
+        "best_params": {
+            "regressor__model__max_depth": 10,
+            "regressor__model__max_features": 1.0,
+            "regressor__model__min_samples_leaf": 4,
+            "regressor__model__min_samples_split": 10
+        },
+        "best_mae": 460.0213644747969,
+        "best_mape": 0.17854535115010384
+    }
+}

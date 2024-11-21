@@ -1,0 +1,32 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.1,
+                "regressor__model__epsilon": 1
+            },
+            "best_mae": 5879.816731665648,
+            "best_mape": 55.23755078040633
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N",
+            "theta",
+            "dt",
+            "I"
+        ],
+        "best_params": {
+            "regressor__model__alpha": 0.1,
+            "regressor__model__epsilon": 1
+        },
+        "best_mae": 5879.816731665648,
+        "best_mape": 55.23755078040633
+    }
+}
