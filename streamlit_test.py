@@ -7,6 +7,9 @@ import numpy as np
 
 import joblib
 
+# Set wide mode as the default layout for Streamlit
+st.set_page_config(layout="wide")
+
 # Define named functions for the transformations
 def log10_transform(x):
     return np.log10(x)
@@ -23,167 +26,178 @@ def load_model(filename):
     except Exception as e:
         print(f"Error loading model: {e}")
 
+# Load actual data
+full = pd.read_csv("Full/full_3.csv", index_col=0)
 
-
-from matplotlib.backend_bases import MouseEvent
-
-class Cursor:
-    """
-    A cross hair cursor.
-    """
-    def __init__(self, ax):
-        self.ax = ax
-        self.horizontal_line = ax.axhline(color='k', lw=0.8, ls='--')
-        self.vertical_line = ax.axvline(color='k', lw=0.8, ls='--')
-        # text location in axes coordinates
-        self.text = ax.text(0.72, 0.9, '', transform=ax.transAxes)
-
-    def set_cross_hair_visible(self, visible):
-        need_redraw = self.horizontal_line.get_visible() != visible
-        self.horizontal_line.set_visible(visible)
-        self.vertical_line.set_visible(visible)
-        self.text.set_visible(visible)
-        return need_redraw
-
-    def on_mouse_move(self, event):
-        if not event.inaxes:
-            need_redraw = self.set_cross_hair_visible(False)
-            if need_redraw:
-                self.ax.figure.canvas.draw()
-        else:
-            self.set_cross_hair_visible(True)
-            x, y = event.xdata, event.ydata
-            # update the line positions
-            self.horizontal_line.set_ydata([y])
-            self.vertical_line.set_xdata([x])
-            self.text.set_text(f'x={x:1.2f}, y={y:1.2f}')
-            self.ax.figure.canvas.draw()
-
+full_err_df = pd.read_csv("Full/full_err.csv", index_col=0)
+full_err_df['accumulated_error'] = np.abs(full_err_df['accumulated_error'])
+interval = 100  # Define the interval for I
+sampled_err_df = full_err_df[full_err_df['I'] % interval == 0]  # Sample rows where I is a multiple of the interval
 
 # Load the selected model
 model_files = {
-    "model_poly_final": "Models/Precision/model_poly_final.joblib",
-    "model_dt_final": "Models/Precision/model_dt_final.joblib",
-    "model_huber_final": "Models/Precision/model_huber_final.joblib",
-    "model_gb_final": "Models/Precision/model_gb_final.joblib",
-    "model_svr_final": "Models/Precision/model_svr_final.joblib",
-    "model_ert_final": "Models/Precision/model_ert_final.joblib",
-    "model_poly_final_test": "Models/Precision/model_poly_final_test.joblib"
+    "Precision":{
+        "model_poly_final": "Models/Precision/model_poly_final.joblib",
+        "model_dt_final": "Models/Precision/model_dt_final.joblib",
+        "model_huber_final": "Models/Precision/model_huber_final.joblib",
+        "model_gb_final": "Models/Precision/model_gb_final.joblib",
+        "model_svr_final": "Models/Precision/model_svr_final.joblib",
+        "model_ert_final": "Models/Precision/model_ert_final.joblib",
+        "model_poly_final_test": "Models/Precision/model_poly_final_test.joblib"
+
+    },
+    "Execution":{
+        "model_dt_final": "Models/Execution/model_dt_final.joblib",
+        "model_ert_final": "Models/Execution/model_ert_final.joblib",
+        "model_huber_final": "Models/Execution/model_huber_final.joblib",
+        "model_poly_final": "Models/Execution/model_poly_final.joblib",
+        "model_svr_final": "Models/Execution/model_svr_final.joblib",
+    }
 }
-# Set wide mode as the default layout for Streamlit
-st.set_page_config(layout="wide")
+
+# Create a layout with two columns
+t1, t2 = st.columns([3, 7])# [3, 7]
+
 
 # Set the title of the Streamlit app
-st.title("Bonsai Estimate")
+with t1:
+    st.title("Bonsai Estimate")
+
+# Create a selectbox to choose between execution and precision models
+with t2:
+    # Display the filter criteria    
+    cc1, cc2, cc3 = st.columns([1, 8, 1])
+    with cc1:
+        st.write(' ')
+
+    with cc2:
+        prediction_type = st.selectbox("Select Prediction Type", ["Execution", "Precision"])
+
+    with cc3:
+        st.write(' ')
 
 # Create a layout with two columns
 col1, col2 = st.columns([3, 7])
 
 with col1:
-    model_options = list(model_files.keys())
+
+    # select model to use
+    model_options = list(model_files[prediction_type].keys())
     model_type = st.selectbox("Select Model", model_options)
-    model = load_model(model_files[model_type])
+    model = load_model(model_files[prediction_type][model_type])
 
-    full = pd.read_csv("Full/full_3.csv", index_col=0)
-    full_err_df = pd.read_csv("Full/full_err.csv", index_col=0)
-    full_err_df['accumulated_error'] = np.abs(full_err_df['accumulated_error'])
+    # Extract column names from the sklearn model
+    column_names = model.feature_names_in_
+    # st.write("Column Names:", column_names)
 
+    # Set dataset to be used
+    if prediction_type == "Execution":
+        df = full
+        target = 'exec_time_avg'
+    elif prediction_type == "Precision":
+        df = sampled_err_df
+        target = 'accumulated_error'
 
-
-    interval = 100  # Define the interval for I
-    sampled_err_df = full_err_df[full_err_df['I'] % interval == 0]  # Sample rows where I is a multiple of the interval\
-    df = sampled_err_df
-
-    # df = full_err_df
 
     # Create a streamlit selector for choosing the plot type
-    plot_type = st.selectbox("Select Plot Type", ["I vs accumulated_error", "N vs accumulated_error", "dt vs accumulated_error", "theta vs accumulated_error"])
+    plot_type = st.selectbox("Select Plot Type", [f"{column} vs {target}" for column in column_names])
 
     # Set the src and target variables based on the selected plot type
-    if plot_type == "I vs accumulated_error":
-        src = 'I'
-        target = 'accumulated_error'
-    elif plot_type == "N vs accumulated_error":
-        src = 'N'
-        target = 'accumulated_error'
-    elif plot_type == "dt vs accumulated_error":
-        src = 'dt'
-        target = 'accumulated_error'
-    elif plot_type == "theta vs accumulated_error":
-        src = 'theta'
-        target = 'accumulated_error'
+    for column in column_names:
+        if plot_type == f"{column} vs {target}":
+            src = column
+            break
 
     # Define the filter criteria
     filter_criteria = {}
 
     # List of input columns
-    input_columns = ['theta', 'N', 'dt', 'I']
+    input_columns = column_names # ['theta', 'N', 'dt', 'I']
 
+    # Define the step and format based on the src value
+    step_format_dict = {
+        'theta': (0.01, "%0.2f",df['theta'].min()),
+        'dt': (0.00625, "%0.7f", df['dt'].min()),
+    }
+    
     # Set input values to the filter_criteria for features not in src
     for feature in input_columns:
         if feature != src:
-            if feature == 'N':
-                value = st.number_input(feature, value=100, step=1, format="%d", placeholder="Type an integer...")
-            elif feature == 'theta':
-                value = st.number_input(feature, value=0.20, step=0.01, format="%0.2f", placeholder="Type a number...")
-            elif feature == 'I':
-                value = st.number_input(feature, value=5000, step=1, format="%d", placeholder="Type an integer...")
-            elif feature == 'dt':
-                value = st.number_input(feature, value=0.0625, step=0.00625, format="%0.5f", placeholder="Type a number...")
-            filter_criteria[feature] = [value]
-            st.write(f"The current {feature} value is ", value)
+            stp, fmt, val = step_format_dict.get(feature, (1, "%d", df[feature].iloc[-1]))
+            value = st.number_input(feature, value=val, step=stp, format=fmt, placeholder="Input...")
+            filter_criteria[feature] = [round(value, 7)] 
+            # st.write(f"The current {feature} value is ", round(value, 7))
 
+    stp, fmt, val = step_format_dict.get(src, (1, "%d", df[src].max()))
 
-    # Add an input to select the range of new_src_values
-    if src == 'N':
-        stp = 1
-    elif src == 'theta':
-        stp = 0.01
-    elif src == 'I':
-        stp = 1
-    elif src == 'dt':
-        stp = 0.00625
-
-    new_src_range = st.slider("Select Range of new_src_values", 
+    new_src_range = st.slider(f"Select Range of {src} prediction", 
                               min_value=df[src].min(), max_value=df[src].max()*2, value=(df[src].min(), df[src].max()), step=stp)
 
     # Generate new_src_values within the selected range
-    new_src_values = np.linspace(new_src_range[0], new_src_range[1], 50)
-    # new_src_values = np.linspace(df[src].min(), df[src].max(), 50)  # Generate src values in the range of existing data
+    if isinstance(stp, int):
+        new_src_values = np.linspace(new_src_range[0], new_src_range[1], 50).round().astype(int)
+    else:
+        new_src_values = np.linspace(new_src_range[0], new_src_range[1], 50)
 
-    generated_df = pd.DataFrame({
-        'N': filter_criteria.get('N', [100])[0],
-        'theta': filter_criteria.get('theta', [0.20])[0],
-        'dt': filter_criteria.get('dt', [0.0625])[0],
-        'I': filter_criteria.get('I', [5000])[0],
-        src: new_src_values
-    })
+    dicts = {}
+    for feature, values in filter_criteria.items():
+        dicts[feature] = values[0]
+    dicts[src] = new_src_values
+
+    generated_df = pd.DataFrame(dicts)
+    
+    st.write("actual_df:",df[input_columns])
 
     # Apply filtering based on the filter criteria
     for feature, values in filter_criteria.items():
         df = df[df[feature].isin(values)]
 
-    generated_df['predicted_accumulated_error'] = model.predict(generated_df[['N', 'theta', 'dt', 'I']])
+    generated_df[f'predicted_{target}'] = model.predict(generated_df[input_columns])
 
 with col2:
-    fig, ax = plt.subplots(figsize=(10, 6)) # 
+    fig, ax = plt.subplots(figsize=(10, 6))
 
+    # Actual
     actual_scatter = ax.scatter(df[src], df[target], color='blue', label='Actual')
-    ax.plot(df[src], df[target], color='blue')
+    ax.plot(df[src], df[target],  linestyle='--', color='blue')
 
-    predicted_scatter = ax.scatter(generated_df[src], generated_df['predicted_accumulated_error'], color= 'red', marker='x', label=f'{model_type}')
-    ax.plot(generated_df[src], generated_df['predicted_accumulated_error'], linestyle='-', color= 'red')
-    
-    ax.set_title(f'{src} vs accumulated_error, {filter_criteria}')
+    # Predicted
+    predicted_scatter = ax.scatter(generated_df[src], generated_df[f'predicted_{target}'], color= 'red', marker='x', label=f'{model_type}')
+    ax.plot(generated_df[src], generated_df[f'predicted_{target}'], linestyle='-', color= 'red')
+
+    # Set title
+    # ax.set_title(f'{src} vs accumulated_error\n{filter_criteria}')
+    ax.set_title(f'{src} vs {target}')
+
+    # Set x-axis label
+    ax.set_xlabel(src)
+
+    # Set y-axis label
+    ax.set_ylabel(target)
+
+    # Set legend
     ax.legend(facecolor='white', framealpha=1)
+
+    # Set grid
     ax.grid(linestyle='-', linewidth=1, alpha=0.5, zorder=0)
 
+    # Add mouse position plugin
+    mpld3.plugins.connect(fig, mpld3.plugins.MousePosition(fontsize=14, fmt='.0f'))
 
-
-    mpld3.plugins.connect(fig, mpld3.plugins.MousePosition(fontsize=14,fmt='.5f'))
-    
+    # Convert figure to HTML
     fig_html = mpld3.fig_to_html(fig)
-    
-    # Display the current screen size
-    components.html(fig_html, height=800)
+
+    # Display the figure
+    components.html(fig_html, height=620)
+
+    # Display the filter criteria    
+    c1, c2, c3 = st.columns([1.5, 7, 1.5])
+    with c1:
+        st.write(' ')
+
+    with c2:
+        st.write(pd.DataFrame(filter_criteria).reset_index(drop=True))
+
+    with c3:
+        st.write(' ')
 
