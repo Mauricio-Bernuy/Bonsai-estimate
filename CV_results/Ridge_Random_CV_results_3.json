@@ -1,0 +1,26 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 1,
+                "regressor__poly__degree": 2
+            },
+            "best_mae": 18993.418237776463,
+            "best_mape": 4957928.1162731275
+        }
+    ],
+    "best_result": {
+        "features": [
+            "I"
+        ],
+        "best_params": {
+            "regressor__model__alpha": 1,
+            "regressor__poly__degree": 2
+        },
+        "best_mae": 18993.418237776463,
+        "best_mape": 4957928.1162731275
+    }
+}

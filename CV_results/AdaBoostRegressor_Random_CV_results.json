@@ -1,0 +1,36 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__estimator__C": 1000,
+                "regressor__model__estimator__epsilon": 0.001,
+                "regressor__model__learning_rate": 0.1,
+                "regressor__model__n_estimators": 200
+            },
+            "best_mae": 1817.8325484032296,
+            "best_mape": 0.3969389990928338
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N",
+            "theta",
+            "dt",
+            "I"
+        ],
+        "best_params": {
+            "regressor__model__estimator__C": 1000,
+            "regressor__model__estimator__epsilon": 0.001,
+            "regressor__model__learning_rate": 0.1,
+            "regressor__model__n_estimators": 200
+        },
+        "best_mae": 1817.8325484032296,
+        "best_mape": 0.3969389990928338
+    }
+}

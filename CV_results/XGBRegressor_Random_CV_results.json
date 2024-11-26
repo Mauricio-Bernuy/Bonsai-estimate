@@ -1,0 +1,44 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "I"
+            ],
+            "best_params": {
+                "regressor__model__colsample_bytree": 1.0,
+                "regressor__model__learning_rate": 0.1,
+                "regressor__model__max_depth": 10,
+                "regressor__model__min_child_weight": 1,
+                "regressor__model__n_estimators": 1000,
+                "regressor__model__reg_alpha": 0,
+                "regressor__model__reg_lambda": 10,
+                "regressor__model__subsample": 0.8
+            },
+            "best_mae": 298.1263239389816,
+            "best_mape": 0.1431198852672651
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N",
+            "theta",
+            "dt",
+            "I"
+        ],
+        "best_params": {
+            "regressor__model__colsample_bytree": 1.0,
+            "regressor__model__learning_rate": 0.1,
+            "regressor__model__max_depth": 10,
+            "regressor__model__min_child_weight": 1,
+            "regressor__model__n_estimators": 1000,
+            "regressor__model__reg_alpha": 0,
+            "regressor__model__reg_lambda": 10,
+            "regressor__model__subsample": 0.8
+        },
+        "best_mae": 298.1263239389816,
+        "best_mape": 0.1431198852672651
+    }
+}
