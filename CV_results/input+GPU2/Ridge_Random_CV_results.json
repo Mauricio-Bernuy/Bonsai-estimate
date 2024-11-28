@@ -1,0 +1,970 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16541020458822725,
+            "best_mape": 0.8661450748276701
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16523611345988506,
+            "best_mape": 0.8631047643680054
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.1632464303209783,
+            "best_mape": 0.8377407089684988
+        },
+        {
+            "features": [
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16299337031642486,
+            "best_mape": 0.8315130430578833
+        },
+        {
+            "features": [
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.1629934517583389,
+            "best_mape": 0.8315133304218234
+        },
+        {
+            "features": [
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.1629934517583389,
+            "best_mape": 0.8315133304218234
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.1634782589723843,
+            "best_mape": 0.8390889003261389
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.1629475988898629,
+            "best_mape": 0.8319367910774609
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295160543517107,
+            "best_mape": 0.8320184620813634
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295160272707424,
+            "best_mape": 0.8320183954766189
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295160272707424,
+            "best_mape": 0.8320183954766189
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295715105676264,
+            "best_mape": 0.8320652181463066
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16294770268580955,
+            "best_mape": 0.8319972370795593
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16294769572037057,
+            "best_mape": 0.8319971256268393
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16294769572037057,
+            "best_mape": 0.8319971256268393
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295025745498343,
+            "best_mape": 0.8320138939425687
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295025487680123,
+            "best_mape": 0.8320138062753646
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295025487680123,
+            "best_mape": 0.8320138062753648
+        },
+        {
+            "features": [
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16299336239035653,
+            "best_mape": 0.8315132743100262
+        },
+        {
+            "features": [
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16299336239035653,
+            "best_mape": 0.8315132743100262
+        },
+        {
+            "features": [
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16299344229863827,
+            "best_mape": 0.8315133357800644
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16294328643417808,
+            "best_mape": 0.8321168662797215
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295114948628023,
+            "best_mape": 0.8322430829816536
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295114166056884,
+            "best_mape": 0.8322429596867955
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295114166056884,
+            "best_mape": 0.8322429596867955
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.1629248248150148,
+            "best_mape": 0.8280738686093775
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16292471441103432,
+            "best_mape": 0.8280710711388017
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16292471441103232,
+            "best_mape": 0.8280710711388102
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295159345342827,
+            "best_mape": 0.8320184436027519
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295159345342827,
+            "best_mape": 0.8320184436027519
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.1629515919661579,
+            "best_mape": 0.8320184157171073
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16299384541110953,
+            "best_mape": 0.8326175601412984
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16299380143581993,
+            "best_mape": 0.8326172809821504
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16299380143581996,
+            "best_mape": 0.8326172809821504
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16294686635927333,
+            "best_mape": 0.8319966692942675
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16294686635927325,
+            "best_mape": 0.8319966692942664
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16294768456961134,
+            "best_mape": 0.8319971468591605
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16294947285577205,
+            "best_mape": 0.8320135219440091
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16294947285577205,
+            "best_mape": 0.8320135219440086
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295024974726363,
+            "best_mape": 0.8320137913746279
+        },
+        {
+            "features": [
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.1629933597502595,
+            "best_mape": 0.8315133513311057
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16276780220400372,
+            "best_mape": 0.8255684568694882
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.1627678094048673,
+            "best_mape": 0.8255684642679062
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16276780940486968,
+            "best_mape": 0.8255684642679351
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295112703333217,
+            "best_mape": 0.8322430235598821
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295112703333214,
+            "best_mape": 0.8322430235598821
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.1629511232019512,
+            "best_mape": 0.8322429718905401
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.1629245540559373,
+            "best_mape": 0.8280725585036353
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16292455405594047,
+            "best_mape": 0.8280725585036208
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.1629244999909752,
+            "best_mape": 0.828071224542908
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.1629508089746155,
+            "best_mape": 0.8320184370012196
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16299418882271596,
+            "best_mape": 0.8326234410625967
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.162994188822716,
+            "best_mape": 0.8326234410625964
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16299416674256406,
+            "best_mape": 0.8326233126360771
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.1629468584542795,
+            "best_mape": 0.8319962341833911
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16294947870871362,
+            "best_mape": 0.8320131662316632
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16276692774685883,
+            "best_mape": 0.8255675936123931
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16276692774686216,
+            "best_mape": 0.8255675936124085
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16276693046375731,
+            "best_mape": 0.8255675961317399
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.16295111954785474,
+            "best_mape": 0.8322430037521837
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16292446308223824,
+            "best_mape": 0.8280721271066527
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.01
+            },
+            "best_mae": 0.1629943048134903,
+            "best_mape": 0.8326254293941892
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt"
+            ],
+            "best_params": {
+                "regressor__model__alpha": 0.0001
+            },
+            "best_mae": 0.16276663392793464,
+            "best_mape": 0.8255673225807925
+        }
+    ],
+    "best_result": {
+        "features": [
+            "Clock Rate (MHz)",
+            "L2 Cache Size (KB)",
+            "Multiprocessors (SMs)",
+            "Half Precision FLOP/s",
+            "Single Precision FLOP/s",
+            "Double Precision FLOP/s",
+            "N",
+            "theta",
+            "dt"
+        ],
+        "best_params": {
+            "regressor__model__alpha": 0.0001
+        },
+        "best_mae": 0.16276663392793464,
+        "best_mape": 0.8255673225807925
+    }
+}

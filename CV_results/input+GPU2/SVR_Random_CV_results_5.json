@@ -1,0 +1,36 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "N",
+                "theta",
+                "dt",
+                "Clock Rate (MHz)",
+                "Half Precision FLOP/s"
+            ],
+            "best_params": {
+                "regressor__model__C": 2000,
+                "regressor__model__epsilon": 0.0001,
+                "regressor__model__kernel": "rbf"
+            },
+            "best_mae": 0.013804071043867818,
+            "best_mape": 0.09599988939175165
+        }
+    ],
+    "best_result": {
+        "features": [
+            "N",
+            "theta",
+            "dt",
+            "Clock Rate (MHz)",
+            "Half Precision FLOP/s"
+        ],
+        "best_params": {
+            "regressor__model__C": 2000,
+            "regressor__model__epsilon": 0.0001,
+            "regressor__model__kernel": "rbf"
+        },
+        "best_mae": 0.013804071043867818,
+        "best_mape": 0.09599988939175165
+    }
+}

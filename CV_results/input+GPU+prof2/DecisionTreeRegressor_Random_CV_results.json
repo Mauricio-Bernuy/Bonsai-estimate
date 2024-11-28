@@ -1,0 +1,1480 @@
+{
+    "all_results": [
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.015556770089287015,
+            "best_mape": 0.07512974237007289
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.014232675699381076,
+            "best_mape": 0.08562319614858668
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.016284995021959327,
+            "best_mape": 0.07557166384488825
+        },
+        {
+            "features": [
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.0059671712584278055,
+            "best_mape": 0.06623784309537294
+        },
+        {
+            "features": [
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.0059671712584278055,
+            "best_mape": 0.06623784309537294
+        },
+        {
+            "features": [
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.0059671712584278055,
+            "best_mape": 0.06623784309537294
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.01232991809449344,
+            "best_mape": 0.07439407915410151
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.011680244574769058,
+            "best_mape": 0.07337194559169236
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005694837696728679,
+            "best_mape": 0.0661981588088184
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005694837696728679,
+            "best_mape": 0.0661981588088184
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.007368029196548022,
+            "best_mape": 0.0659093485898917
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.011500013396079697,
+            "best_mape": 0.07307980168905734
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005162332988063348,
+            "best_mape": 0.06574997185941212
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005162332988063348,
+            "best_mape": 0.06574997185941212
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005162332988063348,
+            "best_mape": 0.06574997185941212
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.008104458637581604,
+            "best_mape": 0.06431656220117063
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.008104458637581604,
+            "best_mape": 0.06431656220117063
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.008104458637581604,
+            "best_mape": 0.06431656220117063
+        },
+        {
+            "features": [
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.006031357142796798,
+            "best_mape": 0.0648356971560402
+        },
+        {
+            "features": [
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.006031357142796798,
+            "best_mape": 0.0648356971560402
+        },
+        {
+            "features": [
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.006031357142796798,
+            "best_mape": 0.0648356971560402
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.013333360640839583,
+            "best_mape": 0.07324944318571588
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.0056981086735389125,
+            "best_mape": 0.06563109069669062
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.0056981086735389125,
+            "best_mape": 0.06563109069669062
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005165917895775693,
+            "best_mape": 0.06534548846619194
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.00769912822213775,
+            "best_mape": 0.0645577677155796
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.00769912822213775,
+            "best_mape": 0.0645577677155796
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.0067896486667353775,
+            "best_mape": 0.06454663394427299
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.007056389904223156,
+            "best_mape": 0.06576609653499724
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.006271528338789826,
+            "best_mape": 0.0652978425981885
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.006271528338789826,
+            "best_mape": 0.0652978425981885
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005917308565185747,
+            "best_mape": 0.06480949664048477
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005917308565185747,
+            "best_mape": 0.06480949664048477
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005917308565185747,
+            "best_mape": 0.06480949664048477
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.00626082979136951,
+            "best_mape": 0.06511015911734781
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.00626082979136951,
+            "best_mape": 0.06511015911734781
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.00626082979136951,
+            "best_mape": 0.06511015911734781
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005627756322813141,
+            "best_mape": 0.06422293601492399
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005627756322813141,
+            "best_mape": 0.06422293601492399
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005627756322813141,
+            "best_mape": 0.06422293601492399
+        },
+        {
+            "features": [
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.005269125828170283,
+            "best_mape": 0.06471208615962395
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 1.0,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.005966027361750613,
+            "best_mape": 0.06582375576672775
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005467193431496152,
+            "best_mape": 0.06473225449484896
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005467193431496152,
+            "best_mape": 0.06473225449484896
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005141500044058791,
+            "best_mape": 0.0638359665786711
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005141500044058791,
+            "best_mape": 0.0638359665786711
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005141500044058791,
+            "best_mape": 0.0638359665786711
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.006512962944993114,
+            "best_mape": 0.06443910184976245
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.006512962944993114,
+            "best_mape": 0.06443910184976245
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.005261183243576583,
+            "best_mape": 0.06461739206898438
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.005514413701671781,
+            "best_mape": 0.06443441101236422
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005862315162868313,
+            "best_mape": 0.06426065389494849
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005862315162868313,
+            "best_mape": 0.06426065389494849
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.0057938714326293715,
+            "best_mape": 0.06336072419053738
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005512372048860437,
+            "best_mape": 0.06499430322617723
+        },
+        {
+            "features": [
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.006084556090545008,
+            "best_mape": 0.06363588143256418
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005247296921994429,
+            "best_mape": 0.06478030822304996
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.005247296921994429,
+            "best_mape": 0.06478030822304996
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.006401838561735811,
+            "best_mape": 0.0651246996933383
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.0044240008097796504,
+            "best_mape": 0.06434680919250119
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 2,
+                "regressor__model__min_samples_split": 5
+            },
+            "best_mae": 0.006251876258993571,
+            "best_mape": 0.0643324806136179
+        },
+        {
+            "features": [
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.8,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.005063761582853212,
+            "best_mape": 0.06406480217589801
+        },
+        {
+            "features": [
+                "Clock Rate (MHz)",
+                "L2 Cache Size (KB)",
+                "Multiprocessors (SMs)",
+                "Half Precision FLOP/s",
+                "Single Precision FLOP/s",
+                "Double Precision FLOP/s",
+                "N",
+                "theta",
+                "dt",
+                "gld_transactions (dev_approximate_gravity)",
+                "thread_inst_executed (dev_approximate_gravity)",
+                "inst_compute_ld_st (correct_particles)",
+                "active_warps_pm (correct_particles)",
+                "global_store_requests (correct_particles)"
+            ],
+            "best_params": {
+                "regressor__model__max_depth": 10,
+                "regressor__model__max_features": 0.6,
+                "regressor__model__min_samples_leaf": 1,
+                "regressor__model__min_samples_split": 2
+            },
+            "best_mae": 0.004735839150137137,
+            "best_mape": 0.0645140456378665
+        }
+    ],
+    "best_result": {
+        "features": [
+            "L2 Cache Size (KB)",
+            "Multiprocessors (SMs)",
+            "Single Precision FLOP/s",
+            "Double Precision FLOP/s",
+            "N",
+            "theta",
+            "dt",
+            "gld_transactions (dev_approximate_gravity)",
+            "thread_inst_executed (dev_approximate_gravity)",
+            "inst_compute_ld_st (correct_particles)",
+            "active_warps_pm (correct_particles)",
+            "global_store_requests (correct_particles)"
+        ],
+        "best_params": {
+            "regressor__model__max_depth": 10,
+            "regressor__model__max_features": 0.8,
+            "regressor__model__min_samples_leaf": 2,
+            "regressor__model__min_samples_split": 2
+        },
+        "best_mae": 0.0057938714326293715,
+        "best_mape": 0.06336072419053738
+    }
+}

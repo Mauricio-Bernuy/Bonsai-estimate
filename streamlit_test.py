@@ -6,6 +6,51 @@ import pandas as pd
 import numpy as np
 
 import joblib
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler, FunctionTransformer
+from sklearn.compose import make_column_selector
+from sklearn.base import BaseEstimator, TransformerMixin
+import numpy as np
+import sklearn
+
+# Custom transformer to dynamically check for existing columns
+
+class DynamicColumnTransformer(BaseEstimator, TransformerMixin):
+    def __init__(self, transformers, remainder='passthrough'):
+        self.transformers = transformers
+        self.remainder = remainder
+
+    def fit(self, X, y=None):
+        # Dynamically filter transformers for columns present in X
+        self.transformers_ = [
+            (name, trans, [col for col in cols if col in X.columns])
+            for name, trans, cols in self.transformers
+        ]
+        # Create the internal ColumnTransformer
+        self.column_transformer_ = ColumnTransformer(
+            transformers=self.transformers_,
+            remainder=self.remainder
+        )
+        # Fit the ColumnTransformer
+        self.column_transformer_.fit(X, y)
+        return self
+
+    def transform(self, X):
+        # Ensure the transformer is fitted
+        if not hasattr(self, 'column_transformer_'):
+            raise sklearn.exceptions.NotFittedError(
+                "This DynamicColumnTransformer instance is not fitted yet. "
+                "Call 'fit' with appropriate arguments before using this estimator."
+            )
+        # Transform the data using the fitted ColumnTransformer
+        return self.column_transformer_.transform(X)
+
+    def fit_transform(self, X, y=None):
+        return self.fit(X, y).transform(X)
+
+
+
 
 # Set wide mode as the default layout for Streamlit
 st.set_page_config(layout="wide")
