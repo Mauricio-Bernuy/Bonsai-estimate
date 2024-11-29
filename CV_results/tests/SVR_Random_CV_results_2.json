@@ -5,20 +5,15 @@
                 "N",
                 "theta",
                 "dt",
-                "Clock Rate (MHz)",
-                "L2 Cache Size (KB)",
-                "Multiprocessors (SMs)",
-                "Half Precision FLOP/s",
-                "Single Precision FLOP/s",
-                "Double Precision FLOP/s"
+                "I"
             ],
             "best_params": {
-                "regressor__model__C": 0.1,
-                "regressor__model__epsilon": 1e-05,
+                "regressor__model__C": 100,
+                "regressor__model__epsilon": 0.1,
                 "regressor__model__kernel": "rbf"
             },
-            "best_mae": 0.10627732367843583,
-            "best_mape": 0.10627732367843583
+            "best_mae": 8859.665852947497,
+            "best_mape": 7494.235802996304
         }
     ],
     "best_result": {
@@ -26,19 +21,14 @@
             "N",
             "theta",
             "dt",
-            "Clock Rate (MHz)",
-            "L2 Cache Size (KB)",
-            "Multiprocessors (SMs)",
-            "Half Precision FLOP/s",
-            "Single Precision FLOP/s",
-            "Double Precision FLOP/s"
+            "I"
         ],
         "best_params": {
-            "regressor__model__C": 0.1,
-            "regressor__model__epsilon": 1e-05,
+            "regressor__model__C": 100,
+            "regressor__model__epsilon": 0.1,
             "regressor__model__kernel": "rbf"
         },
-        "best_mae": 0.10627732367843583,
-        "best_mape": 0.10627732367843583
+        "best_mae": 8859.665852947497,
+        "best_mape": 7494.235802996304
     }
 }

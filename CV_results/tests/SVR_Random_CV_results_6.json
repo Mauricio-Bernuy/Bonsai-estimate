@@ -2,27 +2,33 @@
     "all_results": [
         {
             "features": [
-                "N"
+                "N",
+                "theta",
+                "dt",
+                "I"
             ],
             "best_params": {
-                "regressor__model__C": 0.01,
+                "regressor__model__C": 100,
                 "regressor__model__epsilon": 0.001,
                 "regressor__model__kernel": "rbf"
             },
-            "best_mae": 0.3682039449080984,
-            "best_mape": 0.3682039449080984
+            "best_mae": 14036.350181884907,
+            "best_mape": 414273.8888376396
         }
     ],
     "best_result": {
         "features": [
-            "N"
+            "N",
+            "theta",
+            "dt",
+            "I"
         ],
         "best_params": {
-            "regressor__model__C": 0.01,
+            "regressor__model__C": 100,
             "regressor__model__epsilon": 0.001,
             "regressor__model__kernel": "rbf"
         },
-        "best_mae": 0.3682039449080984,
-        "best_mape": 0.3682039449080984
+        "best_mae": 14036.350181884907,
+        "best_mape": 414273.8888376396
     }
 }

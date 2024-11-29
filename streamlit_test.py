@@ -50,8 +50,6 @@ class DynamicColumnTransformer(BaseEstimator, TransformerMixin):
         return self.fit(X, y).transform(X)
 
 
-
-
 # Set wide mode as the default layout for Streamlit
 st.set_page_config(layout="wide")
 
@@ -82,21 +80,19 @@ sampled_err_df = full_err_df[full_err_df['I'] % interval == 0]  # Sample rows wh
 # Load the selected model
 model_files = {
     "Precision":{
+        "model_ert_final": "Models/Precision/model_ert_final.joblib",
+        "model_svr_final": "Models/Precision/model_svr_final.joblib",
         "model_poly_final": "Models/Precision/model_poly_final.joblib",
         "model_dt_final": "Models/Precision/model_dt_final.joblib",
         "model_huber_final": "Models/Precision/model_huber_final.joblib",
-        "model_gb_final": "Models/Precision/model_gb_final.joblib",
-        "model_svr_final": "Models/Precision/model_svr_final.joblib",
-        "model_ert_final": "Models/Precision/model_ert_final.joblib",
-        "model_poly_final_test": "Models/Precision/model_poly_final_test.joblib"
 
     },
     "Execution":{
-        "model_dt_final": "Models/Execution/model_dt_final.joblib",
         "model_ert_final": "Models/Execution/model_ert_final.joblib",
-        "model_huber_final": "Models/Execution/model_huber_final.joblib",
-        "model_poly_final": "Models/Execution/model_poly_final.joblib",
         "model_svr_final": "Models/Execution/model_svr_final.joblib",
+        "model_poly_final": "Models/Execution/model_poly_final.joblib",
+        "model_dt_final": "Models/Execution/model_dt_final.joblib",
+        "model_huber_final": "Models/Execution/model_huber_final.joblib",
     }
 }
 
@@ -180,9 +176,9 @@ with col1:
 
     # Generate new_src_values within the selected range
     if isinstance(stp, int):
-        new_src_values = np.linspace(new_src_range[0], new_src_range[1], 50).round().astype(int)
+        new_src_values = np.linspace(new_src_range[0], new_src_range[1], 100).round().astype(int)
     else:
-        new_src_values = np.linspace(new_src_range[0], new_src_range[1], 50)
+        new_src_values = np.linspace(new_src_range[0], new_src_range[1], 100)
 
     dicts = {}
     for feature, values in filter_criteria.items():
