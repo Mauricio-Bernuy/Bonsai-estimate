@@ -14,42 +14,6 @@ from sklearn.base import BaseEstimator, TransformerMixin
 import numpy as np
 import sklearn
 
-# Custom transformer to dynamically check for existing columns
-
-class DynamicColumnTransformer(BaseEstimator, TransformerMixin):
-    def __init__(self, transformers, remainder='passthrough'):
-        self.transformers = transformers
-        self.remainder = remainder
-
-    def fit(self, X, y=None):
-        # Dynamically filter transformers for columns present in X
-        self.transformers_ = [
-            (name, trans, [col for col in cols if col in X.columns])
-            for name, trans, cols in self.transformers
-        ]
-        # Create the internal ColumnTransformer
-        self.column_transformer_ = ColumnTransformer(
-            transformers=self.transformers_,
-            remainder=self.remainder
-        )
-        # Fit the ColumnTransformer
-        self.column_transformer_.fit(X, y)
-        return self
-
-    def transform(self, X):
-        # Ensure the transformer is fitted
-        if not hasattr(self, 'column_transformer_'):
-            raise sklearn.exceptions.NotFittedError(
-                "This DynamicColumnTransformer instance is not fitted yet. "
-                "Call 'fit' with appropriate arguments before using this estimator."
-            )
-        # Transform the data using the fitted ColumnTransformer
-        return self.column_transformer_.transform(X)
-
-    def fit_transform(self, X, y=None):
-        return self.fit(X, y).transform(X)
-
-
 # Set wide mode as the default layout for Streamlit
 st.set_page_config(layout="wide")
 
@@ -151,7 +115,7 @@ with col1:
 
     # Define the filter criteria
     filter_criteria = {}
-
+    
     # List of input columns
     input_columns = column_names # ['theta', 'N', 'dt', 'I']
 
@@ -160,25 +124,37 @@ with col1:
         'theta': (0.01, "%0.2f",df['theta'].min()),
         'dt': (0.00625, "%0.7f", df['dt'].min()),
     }
-    
-    # Set input values to the filter_criteria for features not in src
-    for feature in input_columns:
-        if feature != src:
-            stp, fmt, val = step_format_dict.get(feature, (1, "%d", df[feature].iloc[-1]))
-            value = st.number_input(feature, value=val, step=stp, format=fmt, placeholder="Input...")
-            filter_criteria[feature] = [round(value, 7)] 
-            # st.write(f"The current {feature} value is ", round(value, 7))
 
     stp, fmt, val = step_format_dict.get(src, (1, "%d", df[src].max()))
 
     new_src_range = st.slider(f"Select Range of {src} prediction", 
                               min_value=df[src].min(), max_value=df[src].max()*2, value=(df[src].min(), df[src].max()), step=stp)
-
     # Generate new_src_values within the selected range
     if isinstance(stp, int):
         new_src_values = np.linspace(new_src_range[0], new_src_range[1], 100).round().astype(int)
     else:
         new_src_values = np.linspace(new_src_range[0], new_src_range[1], 100)
+
+    st.write("#### Parameters")
+
+    numcol1, numcol2, numcol3 = st.columns(3)
+
+    # Set input values to the filter_criteria for features not in src
+    for i, feature in enumerate([c for c in input_columns if c != src]):
+        stp, fmt, val = step_format_dict.get(feature, (1, "%d", df[feature].iloc[-1]))
+
+        # Distribute inputs across the three columns
+        if i % 3 == 0:
+            with numcol1:
+                value = st.number_input(feature, value=val, step=stp, format=fmt, placeholder="Input...", key=feature)
+        elif i % 3 == 1:
+            with numcol2:
+                value = st.number_input(feature, value=val, step=stp, format=fmt, placeholder="Input...", key=feature)
+        else:
+            with numcol3:
+                value = st.number_input(feature, value=val, step=stp, format=fmt, placeholder="Input...", key=feature)
+
+        filter_criteria[feature] = [round(value, 7)] 
 
     dicts = {}
     for feature, values in filter_criteria.items():
@@ -187,7 +163,9 @@ with col1:
 
     generated_df = pd.DataFrame(dicts)
     
-    st.write("actual_df:",df[input_columns])
+    st.write("#### Actual data")
+
+    st.write(df[list(input_columns)+[target]])
 
     # Apply filtering based on the filter criteria
     for feature, values in filter_criteria.items():
