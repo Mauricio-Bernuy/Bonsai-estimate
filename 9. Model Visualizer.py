@@ -60,6 +60,227 @@ model_files = {
     }
 }
 
+GPUS = {
+    "GTX 1060" : {
+        "Name": "NVIDIA GeForce GTX 1060 6GB",
+        "Compute Capability": "6.1",
+        "Total Memory (MB)": 6065,
+        "Multiprocessors (SMs)": 10,
+        "Max Threads Per SM": 2048,
+        "Total Cores": 1280,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 32,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 96,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 96,
+        "L2 Cache Size (KB)": 1536,
+        "Memory Bus Width (bits)": 192,
+        "Memory Bandwidth (GB/s)": 192,
+        "Clock Rate (MHz)": 1771,
+        "Warps Per SM": 64,
+        "Blocks Per SM": 32,
+        "Half Precision FLOP/s": 2111,
+        "Single Precision FLOP/s": 1055,
+        "Double Precision FLOP/s": 1055,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 192,
+        "Global Memory Size (MB)": 6065,
+        "L2 Cache Size": 1536,
+        "Memcpy Engines": 2
+    },
+    "RTX 3070" : {
+        "Name": "NVIDIA GeForce RTX 3070",
+        "Compute Capability": "8.6",
+        "Total Memory (MB)": 7877,
+        "Multiprocessors (SMs)": 46,
+        "Max Threads Per SM": 1536,
+        "Total Cores": 5888,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 16,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 100,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 100,
+        "L2 Cache Size (KB)": 4096,
+        "Memory Bus Width (bits)": 256,
+        "Memory Bandwidth (GB/s)": 448,
+        "Clock Rate (MHz)": 1755,
+        "Warps Per SM": 48,
+        "Blocks Per SM": 16,
+        "Half Precision FLOP/s": 9623,
+        "Single Precision FLOP/s": 4811,
+        "Double Precision FLOP/s": 4811,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 448,
+        "Global Memory Size (MB)": 7877,
+        "L2 Cache Size": 4096,
+        "Memcpy Engines": 2
+    },
+    "RTX 3060" : {
+        "Name": "NVIDIA GeForce RTX 3060",
+        "Compute Capability": "8.6",
+        "Total Memory (MB)": 11939,
+        "Multiprocessors (SMs)": 28,
+        "Max Threads Per SM": 1536,
+        "Total Cores": 3584,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 16,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 100,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 100,
+        "L2 Cache Size (KB)": 2304,
+        "Memory Bus Width (bits)": 192,
+        "Memory Bandwidth (GB/s)": 360,
+        "Clock Rate (MHz)": 1777,
+        "Warps Per SM": 48,
+        "Blocks Per SM": 16,
+        "Half Precision FLOP/s": 5931,
+        "Single Precision FLOP/s": 2965,
+        "Double Precision FLOP/s": 2965,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 360,
+        "Global Memory Size (MB)": 11939,
+        "L2 Cache Size": 2304,
+        "Memcpy Engines": 2
+    },
+    "RTX 2070 SUPER" : {
+        "Name": "NVIDIA GeForce RTX 2070 SUPER",
+        "Compute Capability": "7.5",
+        "Total Memory (MB)": 7790,
+        "Multiprocessors (SMs)": 40,
+        "Max Threads Per SM": 1024,
+        "Total Cores": 5120,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 16,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 64,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 64,
+        "L2 Cache Size (KB)": 4096,
+        "Memory Bus Width (bits)": 256,
+        "Memory Bandwidth (GB/s)": 448,
+        "Clock Rate (MHz)": 1785,
+        "Warps Per SM": 32,
+        "Blocks Per SM": 16,
+        "Half Precision FLOP/s": 8511,
+        "Single Precision FLOP/s": 4255,
+        "Double Precision FLOP/s": 4255,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 448,
+        "Global Memory Size (MB)": 7790,
+        "L2 Cache Size": 4096,
+        "Memcpy Engines": 3
+    },
+    "RTX 4060 Ti" : {
+        "Name": "NVIDIA GeForce RTX 4060 Ti",
+        "Compute Capability": "8.9",
+        "Total Memory (MB)": 7843,
+        "Multiprocessors (SMs)": 34,
+        "Max Threads Per SM": 1536,
+        "Total Cores": 4352,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 24,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 100,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 100,
+        "L2 Cache Size (KB)": 32768,
+        "Memory Bus Width (bits)": 128,
+        "Memory Bandwidth (GB/s)": 288,
+        "Clock Rate (MHz)": 2565,
+        "Warps Per SM": 48,
+        "Blocks Per SM": 24,
+        "Half Precision FLOP/s": 10396,
+        "Single Precision FLOP/s": 5198,
+        "Double Precision FLOP/s": 5198,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 288,
+        "Global Memory Size (MB)": 7843,
+        "L2 Cache Size": 32768,
+        "Memcpy Engines": 2
+    },
+    "Tesla T4" : {
+        "Name": "Tesla T4",
+        "Compute Capability": "7.5",
+        "Total Memory (MB)": 15102,
+        "Multiprocessors (SMs)": 40,
+        "Max Threads Per SM": 1024,
+        "Total Cores": 5120,
+        "Warp Size": 32,
+        "Max Threads Per Block": 1024,
+        "Max Blocks Per SM": 16,
+        "Shared Memory Per Block (KB)": 48,
+        "Shared Memory Per SM (KB)": 64,
+        "Registers Per Block": 65536,
+        "Registers Per SM": 65536,
+        "L1 Cache Size (KB)": 64,
+        "L2 Cache Size (KB)": 4096,
+        "Memory Bus Width (bits)": 256,
+        "Memory Bandwidth (GB/s)": 320,
+        "Clock Rate (MHz)": 1590,
+        "Warps Per SM": 32,
+        "Blocks Per SM": 16,
+        "Half Precision FLOP/s": 7581,
+        "Single Precision FLOP/s": 3790,
+        "Double Precision FLOP/s": 3790,
+        "Concurrent Kernels": 1,
+        "Threads Per Warp": 32,
+        "Global Memory Bandwidth (GB/s)": 320,
+        "Global Memory Size (MB)": 15102,
+        "L2 Cache Size": 4096,
+        "Memcpy Engines": 3
+    },
+    "Tesla P100-PCIE-16GB" : {
+        'Name': 'Tesla P100-PCIE-16GB',
+        'Compute Capability': '6.0',
+        'Total Memory (MB)': 16269,
+        'Multiprocessors (SMs)': 56,
+        'Max Threads Per SM': 2048,
+        'Total Cores': 7168,
+        'Warp Size': 32,
+        'Max Threads Per Block': 1024,
+        'Max Blocks Per SM': 32,
+        'Shared Memory Per Block (KB)': 48,
+        'Shared Memory Per SM (KB)': 64,
+        'Registers Per Block': 65536,
+        'Registers Per SM': 65536,
+        'L1 Cache Size (KB)': 64,
+        'L2 Cache Size (KB)': 4096,
+        'Memory Bus Width (bits)': 4096,
+        'Memory Bandwidth (GB/s)': 732,
+        'Clock Rate (MHz)': 1328,
+        'Warps Per SM': 64,
+        'Blocks Per SM': 32,
+        'Half Precision FLOP/s': 8865,
+        'Single Precision FLOP/s': 4432,
+        'Double Precision FLOP/s': 4432,
+        'Concurrent Kernels': 1,
+        'Threads Per Warp': 32,
+        'Global Memory Bandwidth (GB/s)': 732,
+        'Global Memory Size (MB)': 16269,
+        'L2 Cache Size': 4096,
+        'Memcpy Engines': 2
+    }
+}
+
+
 # Create a layout with two columns
 t1, t2 = st.columns([3, 7])# [3, 7]
 
@@ -137,12 +358,22 @@ with col1:
 
     st.write("#### Parameters")
 
+    if prediction_type == "Execution":
+        gpu_options = GPUS.keys()
+        selected_gpu = st.selectbox("*(optional) Select GPU*", gpu_options)
+        # st.write(GPUS[selected_gpu])
+    else:
+        selected_gpu = list(GPUS.keys())[0]
+
     numcol1, numcol2, numcol3 = st.columns(3)
 
     # Set input values to the filter_criteria for features not in src
     for i, feature in enumerate([c for c in input_columns if c != src]):
         stp, fmt, val = step_format_dict.get(feature, (1, "%d", df[feature].iloc[-1]))
 
+        if GPUS[selected_gpu].keys().__contains__(feature):
+            val = GPUS[selected_gpu][feature]
+        # val = 123 if feature == 'N' else val
         # Distribute inputs across the three columns
         if i % 3 == 0:
             with numcol1:
@@ -209,14 +440,14 @@ with col2:
     # Display the figure
     components.html(fig_html, height=620)
 
-    # Display the filter criteria    
-    c1, c2, c3 = st.columns([1.5, 7, 1.5])
-    with c1:
-        st.write(' ')
+    # # Display the filter criteria    
+    # c1, c2, c3 = st.columns([1.5, 7, 1.5])
+    # with c1:
+    #     st.write(' ')
 
-    with c2:
-        st.write(pd.DataFrame(filter_criteria).reset_index(drop=True))
+    # with c2:
+    #     st.write(pd.DataFrame(filter_criteria).reset_index(drop=True))
 
-    with c3:
-        st.write(' ')
+    # with c3:
+    #     st.write(' ')
 
