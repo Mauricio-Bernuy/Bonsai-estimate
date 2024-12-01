@@ -38,6 +38,7 @@ full = pd.read_csv("Full/full_3.csv", index_col=0)
 
 full_err_df = pd.read_csv("Full/full_err.csv", index_col=0)
 full_err_df['accumulated_error'] = np.abs(full_err_df['accumulated_error'])
+full_err_df = full_err_df.query('N > 100')
 interval = 100  # Define the interval for I
 sampled_err_df = full_err_df[full_err_df['I'] % interval == 0]  # Sample rows where I is a multiple of the interval
 
@@ -287,7 +288,32 @@ GPUS = {
         'Global Memory Size (MB)': 16269,
         'L2 Cache Size': 4096,
         'Memcpy Engines': 2
+    },
+    "A100": {
+        'Clock Rate (MHz)': 1065,
+        'Multiprocessors (SMs)': 108,
+        'L2 Cache Size (KB)': 81920,
+        'Half Precision FLOP/s': 13711,
+        'Single Precision FLOP/s': 6855,
+        'Double Precision FLOP/s': 6855
+    },
+    "A100 x 8 (SELENE Cluster)": {
+        'Clock Rate (MHz)': 1065,
+        'Multiprocessors (SMs)': 108,
+        'L2 Cache Size (KB)': 81920 * 8,
+        'Half Precision FLOP/s': 13711 * 8,
+        'Single Precision FLOP/s': 6855 * 8,
+        'Double Precision FLOP/s': 6855 * 8
+    },
+    "A100 x 4320 (SELENE Supercomputer)": {
+        'Clock Rate (MHz)': 1065,
+        'Multiprocessors (SMs)': 108,
+        'L2 Cache Size (KB)': 81920 * 8 * 540,
+        'Half Precision FLOP/s': 13711 * 8 * 540,
+        'Single Precision FLOP/s': 6855 * 8 * 540,
+        'Double Precision FLOP/s': 6855 * 8 * 540
     }
+    
 }
 
 
