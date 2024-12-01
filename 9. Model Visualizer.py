@@ -44,19 +44,29 @@ sampled_err_df = full_err_df[full_err_df['I'] % interval == 0]  # Sample rows wh
 # Load the selected model
 model_files = {
     "Precision":{
-        "model_ert_final": "Models/Precision/model_ert_final.joblib",
-        "model_svr_final": "Models/Precision/model_svr_final.joblib",
-        "model_poly_final": "Models/Precision/model_poly_final.joblib",
-        "model_dt_final": "Models/Precision/model_dt_final.joblib",
-        "model_huber_final": "Models/Precision/model_huber_final.joblib",
+        "model_ert_final (MAPE 26.11%)": "Models/Precision/model_ert_final.joblib",
+        "model_ert_final_TS (MAPE 17.55%)": "Models/Precision/model_ert_final_TS.joblib",
+        "model_svr_final (MAPE 24.00%)": "Models/Precision/model_svr_final.joblib",
+        "model_svr_final_TS (MAPE 12.46%)": "Models/Precision/model_svr_final_TS.joblib",
+        "model_poly_final (MAPE 38.50%)": "Models/Precision/model_poly_final.joblib",
+        "model_poly_final_TS (MAPE 10.75%)": "Models/Precision/model_poly_final_TS.joblib",
+        "model_dt_final (MAPE 46.76%)": "Models/Precision/model_dt_final.joblib",
+        "model_dt_final_TS (MAPE 17.55%)": "Models/Precision/model_dt_final_TS.joblib",
+        "model_huber_final (MAPE 543.86%)": "Models/Precision/model_huber_final.joblib",
+        "model_huber_final_TS (MAPE 313.37%)": "Models/Precision/model_huber_final_TS.joblib",
 
     },
     "Execution":{
-        "model_ert_final": "Models/Execution/model_ert_final.joblib",
-        "model_svr_final": "Models/Execution/model_svr_final.joblib",
-        "model_poly_final": "Models/Execution/model_poly_final.joblib",
-        "model_dt_final": "Models/Execution/model_dt_final.joblib",
-        "model_huber_final": "Models/Execution/model_huber_final.joblib",
+        "model_ert_final (MAPE 6.26%)": "Models/Execution/model_ert_final.joblib",
+        "model_ert_final_GPU (MAPE 22.34%)": "Models/Execution/model_ert_final_GPU.joblib",
+        "model_svr_final (MAPE 9.82%)": "Models/Execution/model_svr_final.joblib",
+        "model_svr_final_GPU (MAPE 33.56%)": "Models/Execution/model_svr_final_GPU.joblib",
+        "model_poly_final (MAPE 6.32%)": "Models/Execution/model_poly_final.joblib",
+        "model_poly_final_GPU (MAPE 33.41%)": "Models/Execution/model_poly_final_GPU.joblib",
+        "model_dt_final (MAPE 6.04%)": "Models/Execution/model_dt_final.joblib",
+        "model_dt_final_GPU (MAPE 19.38%)": "Models/Execution/model_dt_final_GPU.joblib",
+        "model_huber_final (MAPE 66.89%)": "Models/Execution/model_huber_final.joblib",
+        "model_huber_final_GPU (MAPE 64.64%)": "Models/Execution/model_huber_final_GPU.joblib",
     }
 }
 
