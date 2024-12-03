@@ -1,13 +1,29 @@
 ## TODO
 
-añadir propio a todos los graficos
 
-resultados en latex
 
-analisis y teoria de timeseriesCV
+
+
+
+
+
 
 
 ### DONE
+añadir propio a todos los graficos
+
+conclusiones, resultados finales de secciones, que se cumplio, que funcionó
+
+marco teorico adicionales... fuentes de info de modelos y CV
+analisis y teoria de timeseriesCV
+
+resultados en latex 
+plantear comparacion de resutlados de modelos
+
+translate resumen
+quitar a Deza
+diagrama requerido en revision de literatura(?)
+
 add scoring to models in visualizer
 add GPU and TS CV models
 poner gpu defaults para elegir en graph - indev

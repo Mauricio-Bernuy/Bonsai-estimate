@@ -395,6 +395,7 @@ with col1:
     st.write("#### Parameters")
 
     if prediction_type == "Execution":
+        # gpu_options = [None] + list(GPUS.keys())
         gpu_options = GPUS.keys()
         selected_gpu = st.selectbox("*(optional) Select GPU*", gpu_options)
         # st.write(GPUS[selected_gpu])
@@ -407,8 +408,9 @@ with col1:
     for i, feature in enumerate([c for c in input_columns if c != src]):
         stp, fmt, val = step_format_dict.get(feature, (1, "%d", df[feature].iloc[-1]))
 
-        if GPUS[selected_gpu].keys().__contains__(feature):
-            val = GPUS[selected_gpu][feature]
+        if selected_gpu is not None:
+            if GPUS[selected_gpu].keys().__contains__(feature):
+                val = GPUS[selected_gpu][feature]
         # val = 123 if feature == 'N' else val
         # Distribute inputs across the three columns
         if i % 3 == 0:
@@ -454,7 +456,7 @@ with col2:
     # Set title
     # ax.set_title(f'{src} vs accumulated_error\n{filter_criteria}')
     ax.set_title(f'{src} vs {target}')
-
+    
     # Set x-axis label
     ax.set_xlabel(src)
 
@@ -476,6 +478,7 @@ with col2:
     # Display the figure
     components.html(fig_html, height=620)
 
+    # st.write(str(filter_criteria))
     # # Display the filter criteria    
     # c1, c2, c3 = st.columns([1.5, 7, 1.5])
     # with c1:
