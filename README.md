@@ -20,6 +20,9 @@ N-Body; Barnes-Hut; CUDA; Machine Learning;
   </a>
 </p>
 
+## [Query Visualizer](https://bonsaiestimate.streamlit.app/)
+
+
 ## Run visualizer
 ```
 streamlit run "9 Model Visualizer.py"
