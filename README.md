@@ -20,7 +20,7 @@ N-Body; Barnes-Hut; CUDA; Machine Learning;
   </a>
 </p>
 
-## [Query Visualizer](https://bonsaiestimate.streamlit.app/)
+## [Online Query Visualizer](https://bonsaiestimate.streamlit.app/)
 
 
 ## Run visualizer
