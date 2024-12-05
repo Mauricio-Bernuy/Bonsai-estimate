@@ -22,5 +22,5 @@ N-Body; Barnes-Hut; CUDA; Machine Learning;
 
 ## Run visualizer
 ```
-streamlit run "9. Model Visualizer.py"
+streamlit run "9 Model Visualizer.py"
 ```
